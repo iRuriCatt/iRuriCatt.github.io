@@ -27,7 +27,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240814120734843.png" alt="image-20240814120734843"></p>
+<p><img data-src="image-20240814120734843.png" alt="image-20240814120734843"></p>
 <ul>
 <li>
 <p>优点</p>
@@ -51,7 +51,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240814121426834.png" alt="image-20240814121426834"></p>
+<p><img data-src="image-20240814121426834.png" alt="image-20240814121426834"></p>
 <h2 id="2-git-的初始化配置"><a class="anchor" href="#2-git-的初始化配置">#</a> 2. Git 的初始化配置</h2>
 <p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Name&quot;</span>			配置用户名</span><br><span class="line">git config --global user.email <span class="string">&quot;mail@example.com&quot;</span>	配置邮箱</span><br><span class="line">git config --global credential.helper store			存储配置</span><br><span class="line">git config --global --list							查看配置信息</span><br></pre></td></tr></table></figure></p>
 <ul>
@@ -82,9 +82,9 @@
 <p>创建本地仓库</p>
 </li>
 </ul>
-<p><img data-src="git/image-20240816230748069.png" alt="image-20240816230748069"></p>
-<p><img data-src="git/image-20240816231007617.png" alt="image-20240816231007617"></p>
-<p><img data-src="git/image-20240816231535609.png" alt="image-20240816231535609"></p>
+<p><img data-src="image-20240816230748069.png" alt="image-20240816230748069"></p>
+<p><img data-src="image-20240816231007617.png" alt="image-20240816231007617"></p>
+<p><img data-src="image-20240816231535609.png" alt="image-20240816231535609"></p>
 <ul>
 <li>
 <p><code>.gti</code>  这个目录存放了 Git 仓库的所有数据</p>
@@ -97,7 +97,7 @@
 </li>
 </ul>
 <p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/geekhall-laoyang/remote-repo.git</span><br></pre></td></tr></table></figure></p>
-<p><img data-src="git/image-20240816232500401.png" alt="image-20240816232500401"></p>
+<p><img data-src="image-20240816232500401.png" alt="image-20240816232500401"></p>
 <h2 id="4-git-的工作区域和文件状态"><a class="anchor" href="#4-git-的工作区域和文件状态">#</a> 4. Git 的工作区域和文件状态</h2>
 <h3 id="41-git-的工作区域"><a class="anchor" href="#41-git-的工作区域">#</a> 4.1 Git 的工作区域</h3>
 <ul>
@@ -132,7 +132,7 @@
 <p>该过程可以使用 Git 提供的命令来查看、比较或者撤销修改内容，来保证版本控制的准确性和完整性</p>
 </li>
 </ul>
-<p><img data-src="git/image-20240816233625951.png" alt="image-20240816233625951"></p>
+<p><img data-src="image-20240816233625951.png" alt="image-20240816233625951"></p>
 <h3 id="42-文件状态"><a class="anchor" href="#42-文件状态">#</a> 4.2 文件状态</h3>
 <table>
 <thead>
@@ -164,7 +164,7 @@
 </tr>
 </tbody>
 </table>
-<p><img data-src="git/image-20240816234201934.png" alt="image-20240816234201934"></p>
+<p><img data-src="image-20240816234201934.png" alt="image-20240816234201934"></p>
 <h2 id="5-添加和提交文件"><a class="anchor" href="#5-添加和提交文件">#</a> 5. 添加和提交文件</h2>
 <table>
 <thead>
@@ -195,7 +195,7 @@
 <ul>
 <li>创建文件，查看文件状态</li>
 </ul>
-<p><img data-src="git/image-20240817000813475.png" alt="image-20240817000813475"></p>
+<p><img data-src="image-20240817000813475.png" alt="image-20240817000813475"></p>
 <ul>
 <li>将文件添加到暂存区
 <ul>
@@ -203,11 +203,11 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817001518557.png" alt="image-20240817001518557"></p>
+<p><img data-src="image-20240817001518557.png" alt="image-20240817001518557"></p>
 <ul>
 <li>将暂存区中的文件提交到仓库中</li>
 </ul>
-<p><img data-src="git/image-20240817002327619.png" alt="image-20240817002327619"></p>
+<p><img data-src="image-20240817002327619.png" alt="image-20240817002327619"></p>
 <ul>
 <li><code>git add</code>  还可以使用通配符来添加多个文件
 <ul>
@@ -215,7 +215,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817002727517.png" alt="image-20240817002727517"></p>
+<p><img data-src="image-20240817002727517.png" alt="image-20240817002727517"></p>
 <ul>
 <li><code>git add</code>  还可以接受文件夹作为参数
 <ul>
@@ -223,15 +223,15 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817003134519.png" alt="image-20240817003134519"></p>
+<p><img data-src="image-20240817003134519.png" alt="image-20240817003134519"></p>
 <ul>
 <li><code>git log</code> ：查看提交记录</li>
 </ul>
-<p><img data-src="git/image-20240817003328784.png" alt="image-20240817003328784"></p>
+<p><img data-src="image-20240817003328784.png" alt="image-20240817003328784"></p>
 <ul>
 <li><code>git log --oneline</code> ：查看简洁的提交记录</li>
 </ul>
-<p><img data-src="git/image-20240817003445556.png" alt="image-20240817003445556"></p>
+<p><img data-src="image-20240817003445556.png" alt="image-20240817003445556"></p>
 <h2 id="6-回退版本"><a class="anchor" href="#6-回退版本">#</a> 6. 回退版本</h2>
 <blockquote>
 <p>reset 命令用于回退版本，可以退回到之前的某一个提交的状态</p>
@@ -255,31 +255,31 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817133414055.png" alt="image-20240817133414055"></p>
+<p><img data-src="image-20240817133414055.png" alt="image-20240817133414055"></p>
 <ul>
 <li><code>--soft</code></li>
 </ul>
-<p><img data-src="git/image-20240817133502744.png" alt="image-20240817133502744"></p>
+<p><img data-src="image-20240817133502744.png" alt="image-20240817133502744"></p>
 <ul>
 <li>查看工作区的内容：file3.txt 文件还在</li>
 </ul>
-<p><img data-src="git/image-20240817133701257.png" alt="image-20240817133701257"></p>
+<p><img data-src="image-20240817133701257.png" alt="image-20240817133701257"></p>
 <ul>
 <li>查看暂存区的内容</li>
 </ul>
-<p><img data-src="git/image-20240817134228875.png" alt="image-20240817134228875"></p>
+<p><img data-src="image-20240817134228875.png" alt="image-20240817134228875"></p>
 <ul>
 <li><code>git status</code></li>
 </ul>
-<p><img data-src="git/image-20240817134350787.png" alt="image-20240817134350787"></p>
+<p><img data-src="image-20240817134350787.png" alt="image-20240817134350787"></p>
 <ul>
 <li><code>--hard</code></li>
 </ul>
-<p><img data-src="git/image-20240817134838576.png" alt="image-20240817134838576"></p>
+<p><img data-src="image-20240817134838576.png" alt="image-20240817134838576"></p>
 <ul>
 <li><code>--mixed</code></li>
 </ul>
-<p><img data-src="git/image-20240817135314990.png" alt="image-20240817135314990"></p>
+<p><img data-src="image-20240817135314990.png" alt="image-20240817135314990"></p>
 <ul>
 <li>
 <p>一般来说，当连续提交了多个版本，但又觉得这些提交没有太大意义，可以合并成一个版本时，便可以通过 <code>--soft</code>  和 <code>--mixed</code>  这两个参数来进行回退后重新提交</p>
@@ -294,9 +294,9 @@
 <p>如果出现了失误操作也没关系，Git 中的所有操作都是可以回溯的，可以使用 <code>git reflog</code>  命令来查看操作的历史记录，然后找到误操作之前的版本号，再使用 <code>git reset</code>  命令来回退到该版本即可</p>
 </li>
 </ul>
-<p><img data-src="git/image-20240817140337270.png" alt="image-20240817140337270"></p>
+<p><img data-src="image-20240817140337270.png" alt="image-20240817140337270"></p>
 <h2 id="7-查看差异"><a class="anchor" href="#7-查看差异">#</a> 7. 查看差异</h2>
-<p><img data-src="git/image-20240817140515468.png" alt="image-20240817140515468"></p>
+<p><img data-src="image-20240817140515468.png" alt="image-20240817140515468"></p>
 <ul>
 <li>语法格式</li>
 <li><code>git diff</code>
@@ -305,7 +305,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817141148674.png" alt="image-20240817141148674"></p>
+<p><img data-src="image-20240817141148674.png" alt="image-20240817141148674"></p>
 <ul>
 <li><code>git diff HEAD</code>
 <ul>
@@ -313,7 +313,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817141346029.png" alt="image-20240817141346029"></p>
+<p><img data-src="image-20240817141346029.png" alt="image-20240817141346029"></p>
 <ul>
 <li><code>git diff --cached</code>
 <ul>
@@ -321,7 +321,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817141603317.png" alt="image-20240817141603317"></p>
+<p><img data-src="image-20240817141603317.png" alt="image-20240817141603317"></p>
 <ul>
 <li><code>git diff &lt;commit-id&gt; &lt;commit-id&gt;</code>
 <ul>
@@ -329,7 +329,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817141913396.png" alt="image-20240817141913396"></p>
+<p><img data-src="image-20240817141913396.png" alt="image-20240817141913396"></p>
 <ul>
 <li>
 <p><code>git diff 39ab5d2 HEAD</code></p>
@@ -346,7 +346,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817143441186.png" alt="image-20240817143441186"></p>
+<p><img data-src="image-20240817143441186.png" alt="image-20240817143441186"></p>
 <ul>
 <li><code>git diff 分支1 分支2</code>
 <ul>
@@ -402,19 +402,19 @@
 <p>可以在这个文件中列出需要忽略的文件的模式，这样这些文件就不会被添加到版本库</p>
 </li>
 </ul>
-<p><img data-src="git/image-20240817145012147.png" alt="image-20240817145012147"></p>
+<p><img data-src="image-20240817145012147.png" alt="image-20240817145012147"></p>
 <ul>
 <li>创建两个日志文件</li>
 </ul>
-<p><img data-src="git/image-20240817145553025.png" alt="image-20240817145553025"></p>
+<p><img data-src="image-20240817145553025.png" alt="image-20240817145553025"></p>
 <ul>
 <li>将 access.log 添加到 .gitignore 中</li>
 </ul>
-<p><img data-src="git/image-20240817145718133.png" alt="image-20240817145718133"></p>
+<p><img data-src="image-20240817145718133.png" alt="image-20240817145718133"></p>
 <ul>
 <li>提交文件后，access.log 并没有被提交到版本库中</li>
 </ul>
-<p><img data-src="git/image-20240817145814552.png" alt="image-20240817145814552"></p>
+<p><img data-src="image-20240817145814552.png" alt="image-20240817145814552"></p>
 <ul>
 <li>
 <p><code>.gitignore</code>  文件生效的前提是：文件不能是已经被添加到版本库中的文件</p>
@@ -429,7 +429,7 @@
 <p>添加要忽略的文件夹： <code>temp/</code></p>
 </li>
 </ul>
-<p><img data-src="git/image-20240817150654015.png" alt="image-20240817150654015"></p>
+<p><img data-src="image-20240817150654015.png" alt="image-20240817150654015"></p>
 <ul>
 <li>查看仓库状态： <code>git status -s</code>
 <ul>
@@ -437,7 +437,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817151224013.png" alt="image-20240817151224013"></p>
+<p><img data-src="image-20240817151224013.png" alt="image-20240817151224013"></p>
 <ul>
 <li>提交文件 <code>git commit -am &quot;test ignore folder&quot;</code>
 <ul>
@@ -446,7 +446,7 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240817151338011.png" alt="image-20240817151338011"></p>
+<p><img data-src="image-20240817151338011.png" alt="image-20240817151338011"></p>
 <ul>
 <li>
 <p><code>.gitignore</code>  文件的匹配规则</p>
@@ -492,11 +492,11 @@
 </li>
 </ul>
 <p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096</span><br></pre></td></tr></table></figure></p>
-<p><img data-src="git/image-20240817163839137.png" alt="image-20240817163839137"></p>
+<p><img data-src="image-20240817163839137.png" alt="image-20240817163839137"></p>
 <ul>
 <li>复制公钥信息到 GitHub 上</li>
 </ul>
-<p><img data-src="git/image-20240817164208138.png" alt="image-20240817164208138"></p>
+<p><img data-src="image-20240817164208138.png" alt="image-20240817164208138"></p>
 <ul>
 <li>如果是指定了新的文件名，需要增加一步新的配置，将以下内容写入 config 文件
 <ul>
@@ -511,7 +511,7 @@
 <li>生成好 SSH 秘钥之后，回到本地仓库执行 <code>git clone</code>  命令</li>
 <li>Tips：如果创建秘钥的时候没有输入密码，则可以直接回车</li>
 </ul>
-<p><img data-src="git/image-20240819140745119.png" alt="image-20240819140745119"></p>
+<p><img data-src="image-20240819140745119.png" alt="image-20240819140745119"></p>
 <ul>
 <li>
 <p>注意</p>
@@ -524,12 +524,12 @@
 <p><code>git push</code> ：把本地仓库的修改推送给远程仓库</p>
 </li>
 </ul>
-<p><img data-src="git/image-20240819141325292.png" alt="image-20240819141325292"></p>
-<p><img data-src="git/image-20240819141258018.png" alt="image-20240819141258018"></p>
+<p><img data-src="image-20240819141325292.png" alt="image-20240819141325292"></p>
+<p><img data-src="image-20240819141258018.png" alt="image-20240819141258018"></p>
 <ul>
 <li><code>git pull &lt;远程仓库名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code> ：把远程仓库的修改拉取到本地仓库</li>
 </ul>
-<p><img data-src="git/image-20240819145404472.png" alt="image-20240819145404472"></p>
+<p><img data-src="image-20240819145404472.png" alt="image-20240819145404472"></p>
 <ul>
 <li>执行完 <code>git pull</code> ，Git 会自动执行一次合并操作，如果远程仓库中的修改内容和本地仓库中的修改内容没有冲突的话，那么合并操作就会成功，否则合并操作就会因为冲突而失败，此时需要手动解决冲突</li>
 <li>从远程仓库获取内容还可以使用 <code>fetch</code>  命令</li>
@@ -552,8 +552,8 @@
 </ul>
 </li>
 </ul>
-<p><img data-src="git/image-20240819142858363.png" alt="image-20240819142858363"></p>
-<p><img data-src="git/image-20240819142910300.png" alt="image-20240819142910300"></p>
+<p><img data-src="image-20240819142858363.png" alt="image-20240819142858363"></p>
+<p><img data-src="image-20240819142910300.png" alt="image-20240819142910300"></p>
 <ul>
 <li>注：Gitee 的操作和 GitHub 基本一致</li>
 </ul>
@@ -580,10 +580,10 @@
 <li>添加</li>
 </ul>
 <p><figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;git.path&quot;</span><span class="punctuation">:</span> <span class="string">&quot;D:\Develop\Git\bin\git.exe&quot;</span></span><br><span class="line"><span class="attr">&quot;terminal.integrated.profiles.windows&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;Git Bash&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;source&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Git Bash&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;path&quot;</span><span class="punctuation">:</span> <span class="string">&quot;D:\\Develop\\Git\\bin\\git.exe&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;terminal.integrated.defaultProfile.windows&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Git Bash&quot;</span></span><br></pre></td></tr></table></figure></p>
-<p><img data-src="git/image-20240819171032514.png" alt="image-20240819171032514"></p>
+<p><img data-src="image-20240819171032514.png" alt="image-20240819171032514"></p>
 </li>
 </ul>
-<p><img data-src="git/image-20240819171056677.png" alt="image-20240819171056677"></p>
+<p><img data-src="image-20240819171056677.png" alt="image-20240819171056677"></p>
 <ul>
 <li>文件状态</li>
 </ul>
@@ -621,7 +621,7 @@
 </tr>
 </tbody>
 </table>
-<p><img data-src="git/image-20240819171810766.png" alt="image-20240819171810766"></p>
+<p><img data-src="image-20240819171810766.png" alt="image-20240819171810766"></p>
 <h2 id="13-分支"><a class="anchor" href="#13-分支">#</a> 13. 分支</h2>
 <blockquote>
 <ul>
@@ -631,7 +631,7 @@
 <li>分支的优点就是能够提高团队协作的效率，减少冲突和错误的影响，让团队中的每个人都能够独立开发和测试</li>
 </ul>
 </blockquote>
-<p><img data-src="git/image-20240819173127591.png" alt="image-20240819173127591"></p>
+<p><img data-src="image-20240819173127591.png" alt="image-20240819173127591"></p>
 <table>
 <thead>
 <tr>
@@ -666,7 +666,7 @@
 </tr>
 </tbody>
 </table>
-<p><img data-src="git/image-20240820135909011.png" alt="image-20240820135909011"></p>
+<p><img data-src="image-20240820135909011.png" alt="image-20240820135909011"></p>
 <h2 id="14-解决合并冲突"><a class="anchor" href="#14-解决合并冲突">#</a> 14. 解决合并冲突</h2>
 <blockquote>
 <p>如果两个分支修改了同一个文件的同一行代码，Git 就不知道该保留哪个分支的修改内容，也就产生了冲突</p>
@@ -678,7 +678,7 @@
 <ul>
 <li>在不同分支上执行 <code>rebase</code>  命令</li>
 </ul>
-<p><img data-src="git/image-20240820141035186.png" alt="image-20240820141035186"></p>
+<p><img data-src="image-20240820141035186.png" alt="image-20240820141035186"></p>
 <ul>
 <li>
 <p>使用 <code>alias</code>  对命令进行重命名</p>
@@ -691,11 +691,11 @@
 <ul>
 <li>在 dev 分支上</li>
 </ul>
-<p><img data-src="git/image-20240820142226668.png" alt="image-20240820142226668"></p>
+<p><img data-src="image-20240820142226668.png" alt="image-20240820142226668"></p>
 <ul>
 <li>在 main 分支上</li>
 </ul>
-<p><img data-src="git/image-20240820142302991.png" alt="image-20240820142302991"></p>
+<p><img data-src="image-20240820142302991.png" alt="image-20240820142302991"></p>
 </li>
 <li>
 <p>Merge</p>
