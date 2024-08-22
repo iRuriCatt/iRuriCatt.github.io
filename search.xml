@@ -52,7 +52,7 @@
 </ul>
 <p><img data-src="image-20240814121426834.png" alt="image-20240814121426834"></p>
 <h1 id="git-的初始化配置"><a class="anchor" href="#git-的初始化配置">#</a> Git 的初始化配置</h1>
-<p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Name&quot;</span>			配置用户名</span><br><span class="line">git config --global user.email <span class="string">&quot;mail@example.com&quot;</span>	配置邮箱</span><br><span class="line">git config --global credential.helper store			存储配置</span><br><span class="line">git config --global --list							查看配置信息</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight bash"><figcaption><span>命令行提示符 mark:1-4</span></figcaption><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Name&quot;</span>			配置用户名</span><br><span class="line">git config --global user.email <span class="string">&quot;mail@example.com&quot;</span>	配置邮箱</span><br><span class="line">git config --global credential.helper store			存储配置</span><br><span class="line">git config --global --list							查看配置信息</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>注：
 <ul>
