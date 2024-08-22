@@ -115,12 +115,12 @@ iRuriCatt's Blog</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c4d07601b05.jpg"></li>
-          <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c4d0d10b26a.png"></li>
-          <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c4d0a2ef2fd.jpg"></li>
-          <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c5702be1c36.jpg"></li>
+          <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c5702de9e58.jpg"></li>
+          <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c4d0a9ead74.png"></li>
+          <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c4d07600f66.jpg"></li>
           <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c4d0a4c555f.jpg"></li>
           <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c4d0a3d8384.jpg"></li>
+          <li class="item" data-background-image="https://img.picui.cn/free/2024/08/21/66c4d07601b05.jpg"></li>
         </ul>
       </div>
     </header>
@@ -164,8 +164,7 @@ iRuriCatt's Blog</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="git-基础"><a class="anchor" href="#git-基础">#</a> git 基础</h1>
-<h2 id="什么是-git"><a class="anchor" href="#什么是-git">#</a> 什么是 git？</h2>
+    <h1 id="什么是-git"><a class="anchor" href="#什么是-git">#</a> 什么是 git？</h1>
 <blockquote>
 <ul>
 <li>Git 是一个免费开源的分布式版本控制系统，它使用一个特殊的名为仓库的数据库来记录文件的变化</li>
@@ -179,7 +178,7 @@ iRuriCatt's Blog</title>
 </li>
 </ul>
 </blockquote>
-<h3 id="集中式版本控制系统"><a class="anchor" href="#集中式版本控制系统">#</a> 集中式版本控制系统</h3>
+<h2 id="集中式版本控制系统"><a class="anchor" href="#集中式版本控制系统">#</a> 集中式版本控制系统</h2>
 <ul>
 <li>工作流程
 <ul>
@@ -203,7 +202,7 @@ iRuriCatt's Blog</title>
 </ul>
 </li>
 </ul>
-<h3 id="分布式版本控制系统"><a class="anchor" href="#分布式版本控制系统">#</a> 分布式版本控制系统</h3>
+<h2 id="分布式版本控制系统"><a class="anchor" href="#分布式版本控制系统">#</a> 分布式版本控制系统</h2>
 <ul>
 <li>工作流程
 <ul>
@@ -213,7 +212,7 @@ iRuriCatt's Blog</title>
 </li>
 </ul>
 <p><img data-src="image-20240814121426834.png" alt="image-20240814121426834"></p>
-<h2 id="git-的初始化配置"><a class="anchor" href="#git-的初始化配置">#</a> Git 的初始化配置</h2>
+<h1 id="git-的初始化配置"><a class="anchor" href="#git-的初始化配置">#</a> Git 的初始化配置</h1>
 <p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Name&quot;</span>			配置用户名</span><br><span class="line">git config --global user.email <span class="string">&quot;mail@example.com&quot;</span>	配置邮箱</span><br><span class="line">git config --global credential.helper store			存储配置</span><br><span class="line">git config --global --list							查看配置信息</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>注：
@@ -224,7 +223,7 @@ iRuriCatt's Blog</title>
 </ul>
 </li>
 </ul>
-<h2 id="新建版本库仓库"><a class="anchor" href="#新建版本库仓库">#</a> 新建版本库（仓库）</h2>
+<h1 id="新建版本库仓库"><a class="anchor" href="#新建版本库仓库">#</a> 新建版本库（仓库）</h1>
 <blockquote>
 <p>版本库又叫仓库（Repository，简称 Repo），可以将仓库理解成一个目录，这个目录里面所有的文件都可以被 Git 管理起来，每个文件的修改、删除、添加等操作，Git 都能跟踪到，以便任何时候都可以追踪历史或者还原到之前的某一个版本</p>
 </blockquote>
@@ -259,8 +258,8 @@ iRuriCatt's Blog</title>
 </ul>
 <p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/geekhall-laoyang/remote-repo.git</span><br></pre></td></tr></table></figure></p>
 <p><img data-src="image-20240816232500401.png" alt="image-20240816232500401"></p>
-<h2 id="git-的工作区域和文件状态"><a class="anchor" href="#git-的工作区域和文件状态">#</a> Git 的工作区域和文件状态</h2>
-<h3 id="git-的工作区域"><a class="anchor" href="#git-的工作区域">#</a> Git 的工作区域</h3>
+<h1 id="git-的工作区域和文件状态"><a class="anchor" href="#git-的工作区域和文件状态">#</a> Git 的工作区域和文件状态</h1>
+<h2 id="git-的工作区域"><a class="anchor" href="#git-的工作区域">#</a> Git 的工作区域</h2>
 <ul>
 <li>
 <p>Git 的本地数据管理分为三个区域，分别是工作区、暂存区、本地仓库</p>
@@ -294,7 +293,7 @@ iRuriCatt's Blog</title>
 </li>
 </ul>
 <p><img data-src="image-20240816233625951.png" alt="image-20240816233625951"></p>
-<h3 id="文件状态"><a class="anchor" href="#文件状态">#</a> 文件状态</h3>
+<h2 id="文件状态"><a class="anchor" href="#文件状态">#</a> 文件状态</h2>
 <table>
 <thead>
 <tr>
@@ -326,7 +325,7 @@ iRuriCatt's Blog</title>
 </tbody>
 </table>
 <p><img data-src="image-20240816234201934.png" alt="image-20240816234201934"></p>
-<h2 id="添加和提交文件"><a class="anchor" href="#添加和提交文件">#</a> 添加和提交文件</h2>
+<h1 id="添加和提交文件"><a class="anchor" href="#添加和提交文件">#</a> 添加和提交文件</h1>
 <table>
 <thead>
 <tr>
@@ -393,7 +392,7 @@ iRuriCatt's Blog</title>
 <li><code>git log --oneline</code> ：查看简洁的提交记录</li>
 </ul>
 <p><img data-src="image-20240817003445556.png" alt="image-20240817003445556"></p>
-<h2 id="回退版本"><a class="anchor" href="#回退版本">#</a> 回退版本</h2>
+<h1 id="回退版本"><a class="anchor" href="#回退版本">#</a> 回退版本</h1>
 <blockquote>
 <p>reset 命令用于回退版本，可以退回到之前的某一个提交的状态</p>
 </blockquote>
@@ -456,7 +455,7 @@ iRuriCatt's Blog</title>
 </li>
 </ul>
 <p><img data-src="image-20240817140337270.png" alt="image-20240817140337270"></p>
-<h2 id="查看差异"><a class="anchor" href="#查看差异">#</a> 查看差异</h2>
+<h1 id="查看差异"><a class="anchor" href="#查看差异">#</a> 查看差异</h1>
 <p><img data-src="image-20240817140515468.png" alt="image-20240817140515468"></p>
 <ul>
 <li>语法格式</li>
@@ -515,7 +514,7 @@ iRuriCatt's Blog</title>
 </ul>
 </li>
 </ul>
-<h2 id="删除文件"><a class="anchor" href="#删除文件">#</a> 删除文件</h2>
+<h1 id="删除文件"><a class="anchor" href="#删除文件">#</a> 删除文件</h1>
 <table>
 <thead>
 <tr>
@@ -545,7 +544,7 @@ iRuriCatt's Blog</title>
 <ul>
 <li>删除后记得提交！</li>
 </ul>
-<h2 id="gitignore忽略文件"><a class="anchor" href="#gitignore忽略文件">#</a>  <code>.gitignore</code>  忽略文件</h2>
+<h1 id="gitignore忽略文件"><a class="anchor" href="#gitignore忽略文件">#</a>  <code>.gitignore</code>  忽略文件</h1>
 <blockquote>
 <p>这个文件的作用就是可以忽略掉一些不应该被加入到版本库中的文件，这样可以让仓库体积更小、更加干净</p>
 </blockquote>
@@ -642,9 +641,9 @@ iRuriCatt's Blog</title>
 <ul>
 <li>GitHub 上提供了各种常用语言的忽略文件的模板，在新建仓库时可以直接使用，也可以根据自己需要进行修改</li>
 </ul>
-<h2 id="远程仓库"><a class="anchor" href="#远程仓库">#</a> 远程仓库</h2>
-<h3 id="github-gitee"><a class="anchor" href="#github-gitee">#</a> GitHub / Gitee</h3>
-<h4 id="ssh配置"><a class="anchor" href="#ssh配置">#</a> SSH 配置</h4>
+<h1 id="远程仓库"><a class="anchor" href="#远程仓库">#</a> 远程仓库</h1>
+<h2 id="github-gitee"><a class="anchor" href="#github-gitee">#</a> GitHub / Gitee</h2>
+<h3 id="ssh配置"><a class="anchor" href="#ssh配置">#</a> SSH 配置</h3>
 <ul>
 <li>生成 SSH 秘钥
 <ul>
@@ -667,7 +666,7 @@ iRuriCatt's Blog</title>
 </li>
 </ul>
 <p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># github</span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/test</span><br></pre></td></tr></table></figure></p>
-<h4 id="克隆远程仓库"><a class="anchor" href="#克隆远程仓库">#</a> 克隆远程仓库</h4>
+<h3 id="克隆远程仓库"><a class="anchor" href="#克隆远程仓库">#</a> 克隆远程仓库</h3>
 <ul>
 <li>生成好 SSH 秘钥之后，回到本地仓库执行 <code>git clone</code>  命令</li>
 <li>Tips：如果创建秘钥的时候没有输入密码，则可以直接回车</li>
@@ -700,7 +699,7 @@ iRuriCatt's Blog</title>
 </ul>
 </li>
 </ul>
-<h4 id="关联本地仓库和远程仓库"><a class="anchor" href="#关联本地仓库和远程仓库">#</a> 关联本地仓库和远程仓库</h4>
+<h3 id="关联本地仓库和远程仓库"><a class="anchor" href="#关联本地仓库和远程仓库">#</a> 关联本地仓库和远程仓库</h3>
 <p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add &lt;远程仓库别名&gt; &lt;远程仓库地址&gt;</span><br><span class="line">git push -u &lt;远程仓库名&gt; &lt;分支名&gt;</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>示例</li>
@@ -718,18 +717,18 @@ iRuriCatt's Blog</title>
 <ul>
 <li>注：Gitee 的操作和 GitHub 基本一致</li>
 </ul>
-<h3 id="gitlab"><a class="anchor" href="#gitlab">#</a> GitLab</h3>
+<h2 id="gitlab"><a class="anchor" href="#gitlab">#</a> GitLab</h2>
 <ul>
 <li>感觉暂时不需要懂，先空着</li>
 </ul>
-<h2 id="gui-工具"><a class="anchor" href="#gui-工具">#</a> GUI 工具</h2>
+<h1 id="gui-工具"><a class="anchor" href="#gui-工具">#</a> GUI 工具</h1>
 <ul>
 <li>GitHub Desktop</li>
 <li>SourceTree</li>
 <li>GitKraken</li>
 <li>VSCode 扩展 GitLens</li>
 </ul>
-<h2 id="在-vscode-中使用-git"><a class="anchor" href="#在-vscode-中使用-git">#</a> 在 VSCode 中使用 Git</h2>
+<h1 id="在-vscode-中使用-git"><a class="anchor" href="#在-vscode-中使用-git">#</a> 在 VSCode 中使用 Git</h1>
 <ul>
 <li>
 <p>ctrl + shift + p：打开命令面板</p>
@@ -783,7 +782,7 @@ iRuriCatt's Blog</title>
 </tbody>
 </table>
 <p><img data-src="image-20240819171810766.png" alt="image-20240819171810766"></p>
-<h2 id="分支"><a class="anchor" href="#分支">#</a> 分支</h2>
+<h1 id="分支"><a class="anchor" href="#分支">#</a> 分支</h1>
 <blockquote>
 <ul>
 <li>可以把分支看作是代码库中的不同版本，可以独立存在，并且有自己的提交记录</li>
@@ -828,14 +827,14 @@ iRuriCatt's Blog</title>
 </tbody>
 </table>
 <p><img data-src="image-20240820135909011.png" alt="image-20240820135909011"></p>
-<h2 id="解决合并冲突"><a class="anchor" href="#解决合并冲突">#</a> 解决合并冲突</h2>
+<h1 id="解决合并冲突"><a class="anchor" href="#解决合并冲突">#</a> 解决合并冲突</h1>
 <blockquote>
 <p>如果两个分支修改了同一个文件的同一行代码，Git 就不知道该保留哪个分支的修改内容，也就产生了冲突</p>
 </blockquote>
 <ul>
 <li>手动解决一下冲突，看一下要保留哪个内容</li>
 </ul>
-<h2 id="rebase"><a class="anchor" href="#rebase">#</a> rebase</h2>
+<h1 id="rebase"><a class="anchor" href="#rebase">#</a> rebase</h1>
 <ul>
 <li>在不同分支上执行 <code>rebase</code>  命令</li>
 </ul>
@@ -876,7 +875,7 @@ iRuriCatt's Blog</title>
 <p>一般来说，如果只是想把两个分支合并起来，不关心提交历史，使用 <code>git merge</code> ；如果确定只有自己在一个分支上开发，并且希望提交历史更加清晰明了，则使用 <code>rebase</code></p>
 </li>
 </ul>
-<h2 id="分支管理和工作流模型"><a class="anchor" href="#分支管理和工作流模型">#</a> 分支管理和工作流模型</h2>
+<h1 id="分支管理和工作流模型"><a class="anchor" href="#分支管理和工作流模型">#</a> 分支管理和工作流模型</h1>
 <ul>
 <li>
 <p>GitFlow</p>
@@ -913,7 +912,7 @@ iRuriCatt's Blog</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2024-08-22 13:53:33" itemprop="dateModified" datetime="2024-08-22T13:53:33+08:00">2024-08-22</time>
+    <time title="修改时间：2024-08-22 14:07:40" itemprop="dateModified" datetime="2024-08-22T14:07:40+08:00">2024-08-22</time>
   </span>
 </div>
 
@@ -961,7 +960,7 @@ iRuriCatt's Blog</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#git-%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text"> git 基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-git"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是 git？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 集中式版本控制系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 分布式版本控制系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text"> Git 的初始化配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93%E4%BB%93%E5%BA%93"><span class="toc-number">1.3.</span> <span class="toc-text"> 新建版本库（仓库）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81"><span class="toc-number">1.4.</span> <span class="toc-text"> Git 的工作区域和文件状态</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#git-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%9F%9F"><span class="toc-number">1.4.1.</span> <span class="toc-text"> Git 的工作区域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 文件状态</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%92%8C%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.</span> <span class="toc-text"> 添加和提交文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9E%E9%80%80%E7%89%88%E6%9C%AC"><span class="toc-number">1.6.</span> <span class="toc-text"> 回退版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%AE%E5%BC%82"><span class="toc-number">1.7.</span> <span class="toc-text"> 查看差异</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="toc-number">1.8.</span> <span class="toc-text"> 删除文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gitignore%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6"><span class="toc-number">1.9.</span> <span class="toc-text">  .gitignore  忽略文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">1.10.</span> <span class="toc-text"> 远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#github-gitee"><span class="toc-number">1.10.1.</span> <span class="toc-text"> GitHub &#x2F; Gitee</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ssh%E9%85%8D%E7%BD%AE"><span class="toc-number">1.10.1.1.</span> <span class="toc-text"> SSH 配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">1.10.1.2.</span> <span class="toc-text"> 克隆远程仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E8%81%94%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E5%92%8C%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">1.10.1.3.</span> <span class="toc-text"> 关联本地仓库和远程仓库</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gitlab"><span class="toc-number">1.10.2.</span> <span class="toc-text"> GitLab</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gui-%E5%B7%A5%E5%85%B7"><span class="toc-number">1.11.</span> <span class="toc-text"> GUI 工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8-vscode-%E4%B8%AD%E4%BD%BF%E7%94%A8-git"><span class="toc-number">1.12.</span> <span class="toc-text"> 在 VSCode 中使用 Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF"><span class="toc-number">1.13.</span> <span class="toc-text"> 分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81"><span class="toc-number">1.14.</span> <span class="toc-text"> 解决合并冲突</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rebase"><span class="toc-number">1.15.</span> <span class="toc-text"> rebase</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E5%92%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.16.</span> <span class="toc-text"> 分支管理和工作流模型</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-git"><span class="toc-number">1.</span> <span class="toc-text"> 什么是 git？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.1.</span> <span class="toc-text"> 集中式版本控制系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.</span> <span class="toc-text"> 分布式版本控制系统</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text"> Git 的初始化配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93%E4%BB%93%E5%BA%93"><span class="toc-number">3.</span> <span class="toc-text"> 新建版本库（仓库）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81"><span class="toc-number">4.</span> <span class="toc-text"> Git 的工作区域和文件状态</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#git-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%9F%9F"><span class="toc-number">4.1.</span> <span class="toc-text"> Git 的工作区域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81"><span class="toc-number">4.2.</span> <span class="toc-text"> 文件状态</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%92%8C%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6"><span class="toc-number">5.</span> <span class="toc-text"> 添加和提交文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9E%E9%80%80%E7%89%88%E6%9C%AC"><span class="toc-number">6.</span> <span class="toc-text"> 回退版本</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%AE%E5%BC%82"><span class="toc-number">7.</span> <span class="toc-text"> 查看差异</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="toc-number">8.</span> <span class="toc-text"> 删除文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gitignore%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6"><span class="toc-number">9.</span> <span class="toc-text">  .gitignore  忽略文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">10.</span> <span class="toc-text"> 远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#github-gitee"><span class="toc-number">10.1.</span> <span class="toc-text"> GitHub &#x2F; Gitee</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh%E9%85%8D%E7%BD%AE"><span class="toc-number">10.1.1.</span> <span class="toc-text"> SSH 配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">10.1.2.</span> <span class="toc-text"> 克隆远程仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E8%81%94%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E5%92%8C%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">10.1.3.</span> <span class="toc-text"> 关联本地仓库和远程仓库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gitlab"><span class="toc-number">10.2.</span> <span class="toc-text"> GitLab</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gui-%E5%B7%A5%E5%85%B7"><span class="toc-number">11.</span> <span class="toc-text"> GUI 工具</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8-vscode-%E4%B8%AD%E4%BD%BF%E7%94%A8-git"><span class="toc-number">12.</span> <span class="toc-text"> 在 VSCode 中使用 Git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E6%94%AF"><span class="toc-number">13.</span> <span class="toc-text"> 分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81"><span class="toc-number">14.</span> <span class="toc-text"> 解决合并冲突</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#rebase"><span class="toc-number">15.</span> <span class="toc-text"> rebase</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E5%92%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%A8%A1%E5%9E%8B"><span class="toc-number">16.</span> <span class="toc-text"> 分支管理和工作流模型</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
