@@ -159,7 +159,7 @@
 <ol start="4">
 <li>引用</li>
 </ol>
-<pre><code class="language-none">&#123;% asset_img "本地图片.jpg" "本地图片" %&#125;
+<pre><code class="language-yacas">&#123;% asset_img "本地图片.jpg" "本地图片" %&#125;
 </code></pre>
 <h4 id="hexo-image-link"><a class="anchor" href="#hexo-image-link">#</a> hexo-image-link</h4>
 <blockquote>
