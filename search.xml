@@ -3,8 +3,8 @@
   <entry>
     <title>git</title>
     <url>/2024/08/22/git/</url>
-    <content><![CDATA[<h1 id="一-git-基础"><a class="anchor" href="#一-git-基础">#</a> 一. git 基础</h1>
-<h2 id="1-什么是-git"><a class="anchor" href="#1-什么是-git">#</a> 1. 什么是 git？</h2>
+    <content><![CDATA[<h1 id="git-基础"><a class="anchor" href="#git-基础">#</a> git 基础</h1>
+<h2 id="什么是-git"><a class="anchor" href="#什么是-git">#</a> 什么是 git？</h2>
 <blockquote>
 <ul>
 <li>Git 是一个免费开源的分布式版本控制系统，它使用一个特殊的名为仓库的数据库来记录文件的变化</li>
@@ -18,7 +18,7 @@
 </li>
 </ul>
 </blockquote>
-<h3 id="11-集中式版本控制系统"><a class="anchor" href="#11-集中式版本控制系统">#</a> 1.1 集中式版本控制系统</h3>
+<h3 id="集中式版本控制系统"><a class="anchor" href="#集中式版本控制系统">#</a> 集中式版本控制系统</h3>
 <ul>
 <li>工作流程
 <ul>
@@ -42,7 +42,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="12-分布式版本控制系统"><a class="anchor" href="#12-分布式版本控制系统">#</a> 1.2 分布式版本控制系统</h3>
+<h3 id="分布式版本控制系统"><a class="anchor" href="#分布式版本控制系统">#</a> 分布式版本控制系统</h3>
 <ul>
 <li>工作流程
 <ul>
@@ -52,7 +52,7 @@
 </li>
 </ul>
 <p><img data-src="image-20240814121426834.png" alt="image-20240814121426834"></p>
-<h2 id="2-git-的初始化配置"><a class="anchor" href="#2-git-的初始化配置">#</a> 2. Git 的初始化配置</h2>
+<h2 id="git-的初始化配置"><a class="anchor" href="#git-的初始化配置">#</a> Git 的初始化配置</h2>
 <p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Your Name&quot;</span>			配置用户名</span><br><span class="line">git config --global user.email <span class="string">&quot;mail@example.com&quot;</span>	配置邮箱</span><br><span class="line">git config --global credential.helper store			存储配置</span><br><span class="line">git config --global --list							查看配置信息</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>注：
@@ -63,7 +63,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="3-新建版本库仓库"><a class="anchor" href="#3-新建版本库仓库">#</a> 3. 新建版本库（仓库）</h2>
+<h2 id="新建版本库仓库"><a class="anchor" href="#新建版本库仓库">#</a> 新建版本库（仓库）</h2>
 <blockquote>
 <p>版本库又叫仓库（Repository，简称 Repo），可以将仓库理解成一个目录，这个目录里面所有的文件都可以被 Git 管理起来，每个文件的修改、删除、添加等操作，Git 都能跟踪到，以便任何时候都可以追踪历史或者还原到之前的某一个版本</p>
 </blockquote>
@@ -87,7 +87,7 @@
 <p><img data-src="image-20240816231535609.png" alt="image-20240816231535609"></p>
 <ul>
 <li>
-<p><code>.gti</code>  这个目录存放了 Git 仓库的所有数据</p>
+<p><code>.git</code>  这个目录存放了 Git 仓库的所有数据</p>
 </li>
 <li>
 <p><code>.git</code>  中的文件和目录都是 Git 仓库的重要组成部分，不能随意删除或者修改这些文件的内容，否则会破坏 Git 仓库</p>
@@ -98,8 +98,8 @@
 </ul>
 <p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/geekhall-laoyang/remote-repo.git</span><br></pre></td></tr></table></figure></p>
 <p><img data-src="image-20240816232500401.png" alt="image-20240816232500401"></p>
-<h2 id="4-git-的工作区域和文件状态"><a class="anchor" href="#4-git-的工作区域和文件状态">#</a> 4. Git 的工作区域和文件状态</h2>
-<h3 id="41-git-的工作区域"><a class="anchor" href="#41-git-的工作区域">#</a> 4.1 Git 的工作区域</h3>
+<h2 id="git-的工作区域和文件状态"><a class="anchor" href="#git-的工作区域和文件状态">#</a> Git 的工作区域和文件状态</h2>
+<h3 id="git-的工作区域"><a class="anchor" href="#git-的工作区域">#</a> Git 的工作区域</h3>
 <ul>
 <li>
 <p>Git 的本地数据管理分为三个区域，分别是工作区、暂存区、本地仓库</p>
@@ -133,7 +133,7 @@
 </li>
 </ul>
 <p><img data-src="image-20240816233625951.png" alt="image-20240816233625951"></p>
-<h3 id="42-文件状态"><a class="anchor" href="#42-文件状态">#</a> 4.2 文件状态</h3>
+<h3 id="文件状态"><a class="anchor" href="#文件状态">#</a> 文件状态</h3>
 <table>
 <thead>
 <tr>
@@ -165,7 +165,7 @@
 </tbody>
 </table>
 <p><img data-src="image-20240816234201934.png" alt="image-20240816234201934"></p>
-<h2 id="5-添加和提交文件"><a class="anchor" href="#5-添加和提交文件">#</a> 5. 添加和提交文件</h2>
+<h2 id="添加和提交文件"><a class="anchor" href="#添加和提交文件">#</a> 添加和提交文件</h2>
 <table>
 <thead>
 <tr>
@@ -232,7 +232,7 @@
 <li><code>git log --oneline</code> ：查看简洁的提交记录</li>
 </ul>
 <p><img data-src="image-20240817003445556.png" alt="image-20240817003445556"></p>
-<h2 id="6-回退版本"><a class="anchor" href="#6-回退版本">#</a> 6. 回退版本</h2>
+<h2 id="回退版本"><a class="anchor" href="#回退版本">#</a> 回退版本</h2>
 <blockquote>
 <p>reset 命令用于回退版本，可以退回到之前的某一个提交的状态</p>
 </blockquote>
@@ -295,7 +295,7 @@
 </li>
 </ul>
 <p><img data-src="image-20240817140337270.png" alt="image-20240817140337270"></p>
-<h2 id="7-查看差异"><a class="anchor" href="#7-查看差异">#</a> 7. 查看差异</h2>
+<h2 id="查看差异"><a class="anchor" href="#查看差异">#</a> 查看差异</h2>
 <p><img data-src="image-20240817140515468.png" alt="image-20240817140515468"></p>
 <ul>
 <li>语法格式</li>
@@ -354,7 +354,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="8-删除文件"><a class="anchor" href="#8-删除文件">#</a> 8. 删除文件</h2>
+<h2 id="删除文件"><a class="anchor" href="#删除文件">#</a> 删除文件</h2>
 <table>
 <thead>
 <tr>
@@ -384,7 +384,7 @@
 <ul>
 <li>删除后记得提交！</li>
 </ul>
-<h2 id="9-gitignore忽略文件"><a class="anchor" href="#9-gitignore忽略文件">#</a> 9.  <code>.gitignore</code>  忽略文件</h2>
+<h2 id="gitignore忽略文件"><a class="anchor" href="#gitignore忽略文件">#</a>  <code>.gitignore</code>  忽略文件</h2>
 <blockquote>
 <p>这个文件的作用就是可以忽略掉一些不应该被加入到版本库中的文件，这样可以让仓库体积更小、更加干净</p>
 </blockquote>
@@ -481,9 +481,9 @@
 <ul>
 <li>GitHub 上提供了各种常用语言的忽略文件的模板，在新建仓库时可以直接使用，也可以根据自己需要进行修改</li>
 </ul>
-<h2 id="10-远程仓库"><a class="anchor" href="#10-远程仓库">#</a> 10. 远程仓库</h2>
-<h3 id="101-github-gitee"><a class="anchor" href="#101-github-gitee">#</a> 10.1 GitHub / Gitee</h3>
-<h4 id="1011-ssh配置"><a class="anchor" href="#1011-ssh配置">#</a> 10.1.1 SSH 配置</h4>
+<h2 id="远程仓库"><a class="anchor" href="#远程仓库">#</a> 远程仓库</h2>
+<h3 id="github-gitee"><a class="anchor" href="#github-gitee">#</a> GitHub / Gitee</h3>
+<h4 id="ssh配置"><a class="anchor" href="#ssh配置">#</a> SSH 配置</h4>
 <ul>
 <li>生成 SSH 秘钥
 <ul>
@@ -506,7 +506,7 @@
 </li>
 </ul>
 <p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># github</span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/test</span><br></pre></td></tr></table></figure></p>
-<h4 id="1012-克隆远程仓库"><a class="anchor" href="#1012-克隆远程仓库">#</a> 10.1.2 克隆远程仓库</h4>
+<h4 id="克隆远程仓库"><a class="anchor" href="#克隆远程仓库">#</a> 克隆远程仓库</h4>
 <ul>
 <li>生成好 SSH 秘钥之后，回到本地仓库执行 <code>git clone</code>  命令</li>
 <li>Tips：如果创建秘钥的时候没有输入密码，则可以直接回车</li>
@@ -539,7 +539,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="1013-关联本地仓库和远程仓库"><a class="anchor" href="#1013-关联本地仓库和远程仓库">#</a> 10.1.3 关联本地仓库和远程仓库</h4>
+<h4 id="关联本地仓库和远程仓库"><a class="anchor" href="#关联本地仓库和远程仓库">#</a> 关联本地仓库和远程仓库</h4>
 <p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add &lt;远程仓库别名&gt; &lt;远程仓库地址&gt;</span><br><span class="line">git push -u &lt;远程仓库名&gt; &lt;分支名&gt;</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>示例</li>
@@ -557,18 +557,18 @@
 <ul>
 <li>注：Gitee 的操作和 GitHub 基本一致</li>
 </ul>
-<h3 id="102-gitlab"><a class="anchor" href="#102-gitlab">#</a> 10.2 GitLab</h3>
+<h3 id="gitlab"><a class="anchor" href="#gitlab">#</a> GitLab</h3>
 <ul>
 <li>感觉暂时不需要懂，先空着</li>
 </ul>
-<h2 id="11-gui-工具"><a class="anchor" href="#11-gui-工具">#</a> 11. GUI 工具</h2>
+<h2 id="gui-工具"><a class="anchor" href="#gui-工具">#</a> GUI 工具</h2>
 <ul>
 <li>GitHub Desktop</li>
 <li>SourceTree</li>
 <li>GitKraken</li>
 <li>VSCode 扩展 GitLens</li>
 </ul>
-<h2 id="12-在-vscode-中使用-git"><a class="anchor" href="#12-在-vscode-中使用-git">#</a> 12. 在 VSCode 中使用 Git</h2>
+<h2 id="在-vscode-中使用-git"><a class="anchor" href="#在-vscode-中使用-git">#</a> 在 VSCode 中使用 Git</h2>
 <ul>
 <li>
 <p>ctrl + shift + p：打开命令面板</p>
@@ -622,7 +622,7 @@
 </tbody>
 </table>
 <p><img data-src="image-20240819171810766.png" alt="image-20240819171810766"></p>
-<h2 id="13-分支"><a class="anchor" href="#13-分支">#</a> 13. 分支</h2>
+<h2 id="分支"><a class="anchor" href="#分支">#</a> 分支</h2>
 <blockquote>
 <ul>
 <li>可以把分支看作是代码库中的不同版本，可以独立存在，并且有自己的提交记录</li>
@@ -667,14 +667,14 @@
 </tbody>
 </table>
 <p><img data-src="image-20240820135909011.png" alt="image-20240820135909011"></p>
-<h2 id="14-解决合并冲突"><a class="anchor" href="#14-解决合并冲突">#</a> 14. 解决合并冲突</h2>
+<h2 id="解决合并冲突"><a class="anchor" href="#解决合并冲突">#</a> 解决合并冲突</h2>
 <blockquote>
 <p>如果两个分支修改了同一个文件的同一行代码，Git 就不知道该保留哪个分支的修改内容，也就产生了冲突</p>
 </blockquote>
 <ul>
 <li>手动解决一下冲突，看一下要保留哪个内容</li>
 </ul>
-<h2 id="15-rebase"><a class="anchor" href="#15-rebase">#</a> 15. rebase</h2>
+<h2 id="rebase"><a class="anchor" href="#rebase">#</a> rebase</h2>
 <ul>
 <li>在不同分支上执行 <code>rebase</code>  命令</li>
 </ul>
@@ -715,7 +715,7 @@
 <p>一般来说，如果只是想把两个分支合并起来，不关心提交历史，使用 <code>git merge</code> ；如果确定只有自己在一个分支上开发，并且希望提交历史更加清晰明了，则使用 <code>rebase</code></p>
 </li>
 </ul>
-<h2 id="16-分支管理和工作流模型"><a class="anchor" href="#16-分支管理和工作流模型">#</a> 16. 分支管理和工作流模型</h2>
+<h2 id="分支管理和工作流模型"><a class="anchor" href="#分支管理和工作流模型">#</a> 分支管理和工作流模型</h2>
 <ul>
 <li>
 <p>GitFlow</p>
@@ -741,25 +741,6 @@
 </ul>
 </li>
 </ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/08/20/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo</span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting</span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub</span>.</p>
-<h2 id="quick-start"><a class="anchor" href="#quick-start">#</a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="anchor" href="#create-a-new-post">#</a> Create a new post</h3>
-<p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></p>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing</span></p>
-<h3 id="run-server"><a class="anchor" href="#run-server">#</a> Run server</h3>
-<p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server</span></p>
-<h3 id="generate-static-files"><a class="anchor" href="#generate-static-files">#</a> Generate static files</h3>
-<p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating</span></p>
-<h3 id="deploy-to-remote-sites"><a class="anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3>
-<p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
-<p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment</span></p>
 ]]></content>
   </entry>
 </search>
